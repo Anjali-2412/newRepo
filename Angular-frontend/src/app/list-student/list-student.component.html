@@ -1,0 +1,30 @@
+<html>
+<br>
+<div class="container">
+
+<table border="1px" >
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Roll Number</th>
+        <th>Address</th>
+        <th>Action</th>
+       
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let i of msg">
+        <td>{{i.id}}</td>
+        <td>{{i.name}}</td>
+        <td>{{i.rollNo}}</td>
+        <td>{{i.address}}</td>
+        <!-- <td><button (click)="updateEmployee(i.id)">Update</button> | -->
+            <td><button style="background-color:green;"     (click)="updateByCreateComponent(i.id)">Update</button> |
+       
+        <button style="background-color: red;"   (click)="delete(i.id)">Delete</button></td>
+    </tr>
+</tbody>
+</table>
+</div>
+</html>

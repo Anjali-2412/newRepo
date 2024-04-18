@@ -1,0 +1,23 @@
+
+<form>
+    <table>
+        <thead>
+          <tr>
+            <th>FirstName</th>
+            <th>RollNo</th>
+            <th>Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" id="FirstName" [(ngModel)]="form.data.name" name="FirstName"></td>
+            <td><input type="text" id="RollNo" [(ngModel)]="form.data.rollNo" name="RollNo" ></td>
+            <td><input type="text" id="Address" [(ngModel)]="form.data.address" name="Address" ></td>
+          </tr> </tbody>
+          <tr>
+            <button  (click)="up()">Update</button>
+          </tr>
+          
+       
+    </table>
+</form> 
